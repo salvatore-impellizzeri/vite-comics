@@ -5,7 +5,7 @@ export default {
         return{ 
             sections: [
                 {
-                    icon: '../../public/img/buy-comics-digital.comics.png',
+                    icon: '../../public/img/buy-comics-digital-comics.png',
                     label: 'DIGITAL COMICS',
                     href: '#',
                 },
@@ -15,12 +15,12 @@ export default {
                     href: '#',
                 },
                 {
-                    icon: '../../public/img/buy-comics-shop-locator.png',
+                    icon: '../../public/img/buy-comics-subscriptions.png',
                     label: 'SUBSCRIPTION',
                     href: '#'
                 },
                 {
-                    icon: '../../public/img/buy-comics-subscritions.png',
+                    icon: '../../public/img/buy-comics-shop-locator.png',
                     label: 'COMIC SHOP LOCATOR',
                     href: '#',
                 },
@@ -41,32 +41,36 @@ export default {
 
 <template> 
 
-    <div class="bg-upper-footer w-100">
-        <div>
-            <a :href="section.href" class="d-flex" v-for="(section, index) in sections" key="index">
+    <div class="w-100">
+        <div class="d-flex justify-content-center align-items-center blue-container">
+            <a :href="section.href" class="d-flex align-items-center m-4" v-for="(section, index) in sections" key="index">
                 <div>
-                    <img :src="section.icon" alt="">
+                    <img :src="section.icon" :alt="section.label">
                 </div>
-                <div>
-                    {{ label }}
+                <div class="m-2">
+                    {{ section.label }}
                 </div>
             </a>
         </div>
     </div>
 
-    <!-- LOWER FOOTER -->
-
-    <div>
-        
-    </div>
-
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/partials/variables.scss' as *;
 
-.bg-upper-footer{
-    background-color: $DCBlueBg;
+.blue-container{
+    padding: 50px 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
 }
 
 </style>

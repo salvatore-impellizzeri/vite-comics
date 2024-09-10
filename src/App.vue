@@ -39,17 +39,25 @@ export default {
     </div>
 
     <!-- FOOTER -->
+
     <div>
-      <div>
+
+      <!-- UPPER FOOTER -->
+
+      <div class="bg-upper-footer">
         <div class="container-70">
-          <AppFooter />
+          <AppUpperFooter />
         </div>
       </div>
+
+      <!-- LOWER FOOTER -->
+
       <div>
         <div class="container-70">
-          <AppFooter />
+          <AppLowerFooter />
         </div>
       </div>
+
     </div>
 
 </template>
@@ -67,7 +75,7 @@ export default {
 }
 
 .bg-upper-footer{
-    background-color: $DCBlueBg;
+    background-color: #0282F9;
 }
 
 .container-70{

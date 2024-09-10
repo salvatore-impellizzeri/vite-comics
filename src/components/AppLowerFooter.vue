@@ -41,21 +41,6 @@ export default {
 
 <template> 
 
-    <!-- UPPER FOOTER -->
-
-    <div class="bg-upper-footer w-100">
-        <div>
-            <a :href="section.href" class="d-flex" v-for="(section, index) in sections" key="index">
-                <div>
-                    <img :src="section.icon" alt="">
-                </div>
-                <div>
-                    {{ label }}
-                </div>
-            </a>
-        </div>
-    </div>
-
     <!-- LOWER FOOTER -->
 
     <div>
@@ -65,10 +50,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/partials/variables.scss' as *;
 
 .bg-upper-footer{
-    background-color: $DCBlueBg;
+    background-color: #0282F9;
 }
 
 </style>

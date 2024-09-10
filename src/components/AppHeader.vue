@@ -79,7 +79,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/partials/variables.scss' as *;
 
 .col-8{
   display: flex;
@@ -111,11 +110,11 @@ export default {
 }
 
 .active-text{
-  color: $DCBlueColor;
+  color: #0282F9;
 }
 
 .active{
-  background-color: $DCBlueBg;
+  background-color: #0282F9;
   width: 80%;
   height: 4px;
   position: absolute;
