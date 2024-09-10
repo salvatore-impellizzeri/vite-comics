@@ -1,38 +1,48 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
-import AppHeader from './components/AppHeader.vue';
+import AppBody from './components/AppBody.vue';
+import AppFooter from './components/AppFooter.vue';
 
 export default {
   data() {
     return {
-      message: 'Template Vite + Vue'
+      message: 'DC Comics'
     }
   },
 
   components: {
     AppHeader,
+    AppBody,
+    AppFooter,
   }
 }
 </script>
 
 <template> 
-  <header>
-    <h1> 
-        <AppHeader />
-    </h1>
-  </header>
+  <div>
+    <div class="container-70">
+      <AppHeader />
+    </div>
+    <div class="container-70">
+      <AppBody />
+    </div>
+    <div class="container-70">
+      <AppFooter />
+    </div>
+  </div> 
 </template>
 
 <style lang="scss" scoped>
-@use 'assets/scss/main.scss' as *;
+@use './assets/scss/partials/variables.scss';
 
-header {
-    background-color: aquamarine;
-    text-align: center;
+.container-70{
+  width: 70%;
+  margin: auto;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
 }
 
-h1 {
-    color: lightcoral;
-}
+
 </style>
 
