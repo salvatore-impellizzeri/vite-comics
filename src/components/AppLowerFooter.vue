@@ -3,32 +3,28 @@
 export default {
     data() {
         return{ 
-            sections: [
+            icons: [
                 {
-                    icon: '../../public/img/buy-comics-digital.comics.png',
-                    label: 'DIGITAL COMICS',
+                    logo: '../../public/img/footer-facebook.png',
                     href: '#',
                 },
                 {
-                    icon: '../../public/img/buy-comics-merchandise.png',
-                    label: 'DC MERCHANDISE',
+                    logo: '../../public/img/footer-periscope.png',
+
                     href: '#',
                 },
                 {
-                    icon: '../../public/img/buy-comics-shop-locator.png',
-                    label: 'SUBSCRIPTION',
-                    href: '#'
-                },
-                {
-                    icon: '../../public/img/buy-comics-subscritions.png',
-                    label: 'COMIC SHOP LOCATOR',
+                    logo: '../../public/img/footer-pinterest.png',
                     href: '#',
                 },
                 {
-                    icon: '../../public/img/buy-dc-power-visa.svg',
-                    label: 'DC POWER VISA',
+                    logo: '../../public/img/footer-twitter.png',
                     href: '#',
-                }
+                },
+                {
+                    logo: '../../public/img/footer-youtube.png',
+                    href: '#',
+                },  
             ],
         }
     },
@@ -41,18 +37,35 @@ export default {
 
 <template> 
 
-    <!-- LOWER FOOTER -->
-
-    <div>
-        
+    <div class="row w-100">
+        <div class="col-5">
+            <button type="button" class="my-btn fw-bold">
+                SIGN-UP NOW!
+            </button>
+        </div>
+        <div class="col-7 d-flex align-items-center justify-content-end">
+            <div class="follow fw-bold">FOLLOW US</div>
+            <div v-for="(icon, index) in icons" key="index">
+                <img class="ms-4" :src="icon.logo" alt="">
+            </div>
+        </div>
     </div>
 
 </template>
 
 <style lang="scss" scoped>
 
-.bg-upper-footer{
-    background-color: #0282F9;
+.my-btn{
+    color: white;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 0;
+    border: 2px solid #0C7CEC;
+}
+
+.follow{
+    color: #0C7CEC;
+    font-size: 20px;
 }
 
 </style>

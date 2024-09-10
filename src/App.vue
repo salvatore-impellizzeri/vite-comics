@@ -2,6 +2,7 @@
 import AppHeader from './components/AppHeader.vue';
 import AppBody from './components/AppBody.vue';
 import AppUpperFooter from './components/AppUpperFooter.vue';
+import AppMiddleFooter from './components/AppMiddleFooter.vue';
 import AppLowerFooter from './components/AppLowerFooter.vue';
 
 export default {
@@ -15,7 +16,8 @@ export default {
     AppHeader,
     AppBody,
     AppUpperFooter,
-    AppLowerFooter,
+    AppMiddleFooter,
+    AppLowerFooter
   }
 }
 </script>
@@ -50,9 +52,17 @@ export default {
         </div>
       </div>
 
+      <!-- MIDDLE FOOTER -->
+
+      <div class="bg-middle-footer">
+        <div class="container-70">
+          <AppMiddleFooter />
+        </div>
+      </div>
+
       <!-- LOWER FOOTER -->
 
-      <div>
+      <div class="bg-lower-footer">
         <div class="container-70">
           <AppLowerFooter />
         </div>
@@ -75,10 +85,23 @@ export default {
 }
 
 .bg-upper-footer{
-    background-color: #0282F9;
+  background-color: #0282F9;
+  box-shadow: 0 2px 2px black;
+}
+
+.bg-middle-footer{
+  background-image: url('../public/img/footer-bg.jpg');
+  background-size: cover;
+  padding: 70px 0px;
+}
+
+.bg-lower-footer{
+  position: relative;
+  background-color: #303030;
 }
 
 .container-70{
+  min-height: 100px;
   width: 70%;
   margin: auto;
   display: flex;
