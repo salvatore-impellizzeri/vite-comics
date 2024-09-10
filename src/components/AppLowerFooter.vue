@@ -46,7 +46,7 @@ export default {
         <div class="col-7 d-flex align-items-center justify-content-end">
             <div class="follow fw-bold">FOLLOW US</div>
             <div v-for="(icon, index) in icons" key="index">
-                <img class="ms-4" :src="icon.logo" alt="">
+                <a :href="icon.href"><img class="ms-4" :src="icon.logo" alt=""></a>
             </div>
         </div>
     </div>
@@ -54,6 +54,14 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+  font-weight: bold;
+  font-family: 'Open Sans';
+}
+
 
 .my-btn{
     color: white;

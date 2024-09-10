@@ -68,7 +68,7 @@ export default {
     <nav class="col-8">
       <ul>
         <li v-for="(link, index) in links" key="index">
-            <a :href="link.href" @click="toggleLink(index)">
+            <a class="sans" :href="link.href" @click="toggleLink(index)" :class="{ 'active-text' : active === index }">
             {{ link.label }}
             <div :class="{ 'active': active === index }"></div>
             </a>
@@ -79,6 +79,13 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+  font-weight: bold;
+  font-family: 'Open Sans';
+}
 
 .col-8{
   display: flex;
@@ -100,9 +107,9 @@ export default {
 
       a{
         text-decoration: none;
-        color: black;
+        color: rgba(0, 0, 0, 0.7);
         &:not(.active):hover{
-        color: rgb(83, 83, 83);
+        color: black;
         }
       }
     }
@@ -110,17 +117,19 @@ export default {
 }
 
 .active-text{
-  color: #0282F9;
+  color: #0282F9 !important;
+  transition: 0.2s ease-in-out;
 }
 
 .active{
   background-color: #0282F9;
-  width: 80%;
+  width: 100%;
   height: 4px;
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%);
+  transition: 0.2s ease-in-out;
 }
 
 img{

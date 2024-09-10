@@ -160,6 +160,14 @@ export default {
 
 <style lang="scss" scoped>
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+  font-weight: bold;
+  font-family: 'Open Sans';
+}
+
 .bg-upper-footer{
     background-color: #0282F9;
     position: relative;
