@@ -3,26 +3,27 @@
 export default {
   data() {
     return {
-      message: ''
+      
     }
-  }
+  },
+
+  methods: {
+
+    }
 }
 </script>
 
-<!-- All'interno del template ci va un solo figlio -->
 <template> 
   <div>
-    <header>
-        <h1> 
-          {{ message }}
-        </h1>
-    </header>
+    <div class="text-white content">  --> Content Goes here <--   </div>
   </div>
 </template>
 
-<style scoped>
-@use '../assets/scss/main.scss' as *;
+<style lang="scss" scoped>
+@use '../assets/scss/partials/variables.scss' as *;
 
-
+.content{
+    font-size: 40px;
+}
 
 </style>

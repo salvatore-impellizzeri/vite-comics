@@ -58,7 +58,7 @@ export default {
 </script>
 
 <template> 
-  <div class="bg-header row w-100">
+  <div class="row w-100">
     <div class="col-4">
       <img src="../../public/img/dc-logo.png" alt="">
     </div>
@@ -79,11 +79,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/main.scss' as *;
-
-.bg-header{
-  background-color: white;
-}
+@use '../assets/scss/partials/variables.scss' as *;
 
 .col-8{
   display: flex;
@@ -115,17 +111,21 @@ export default {
 }
 
 .active-text{
-  color: $DC-blue-color;
+  color: $DCBlueColor;
 }
 
 .active{
-  background-color: $DC-blue-bg;
+  background-color: $DCBlueBg;
   width: 80%;
   height: 4px;
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%);
+}
+
+img{
+  margin: 30px 0px;
 }
 
 </style>
