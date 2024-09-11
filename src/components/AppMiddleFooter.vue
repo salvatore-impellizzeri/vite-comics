@@ -151,7 +151,7 @@ export default {
                 </ul>
             </div>
         </div>
-        <div class="col-5 p-0 d-flex justify-content-end">
+        <div class="col-5 p-0 d-flex justify-content-end position-relative">
             <img src="../../public/img/dc-logo-bg.png" alt="">
         </div>
     </div>
@@ -159,14 +159,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-
-*{
-  font-weight: bold;
-  font-family: 'Open Sans';
-}
 
 .bg-upper-footer{
     background-color: #0282F9;
@@ -195,6 +187,6 @@ ul{
 
 img{
     position: absolute;
-    top: 435px;
+    top: -150px;
 }
 </style>

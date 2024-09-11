@@ -4,6 +4,7 @@ import AppBody from './components/AppBody.vue';
 import AppUpperFooter from './components/AppUpperFooter.vue';
 import AppMiddleFooter from './components/AppMiddleFooter.vue';
 import AppLowerFooter from './components/AppLowerFooter.vue';
+import Card from './components/Card.vue';
 
 export default {
   data() {
@@ -13,6 +14,7 @@ export default {
   },
 
   components: {
+    Card,
     AppHeader,
     AppBody,
     AppUpperFooter,
@@ -29,6 +31,9 @@ export default {
     <div class="bg-header">
       <div class="container-70">
         <AppHeader />
+      </div>
+      <div class="jumbo">
+
       </div>
     </div>
 
@@ -78,8 +83,16 @@ export default {
   background-color: white;
 }
 
+.jumbo{
+  height: 500px;
+  background-image: url("../../public/img/jumbotron.jpg");
+  background-position: top;
+  background-size: cover;
+}
+
 .bg-body{
   margin: 0;
+  padding: 50px 0;
   min-height: 150px;
   background-color: #1C1C1C !important;
 }
