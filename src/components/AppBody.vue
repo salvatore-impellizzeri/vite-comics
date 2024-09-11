@@ -93,19 +93,43 @@ export default {
 
 <template>
   <div>
-    <div class="text-white content">
-      <div class="blue-box">CURRENT SERIES</div>
-      <div class="d-flex flex-wrap justify-content-between">
-        <Card class="my-card" v-for="(card, i) in cards" :key="i" :cardTitle="card.series" :cardImg="card.thumb" />
-      </div>
+    <div class="blue-box series-box">
+      <span>
+        CURRENT SERIES
+      </span>
     </div>
+    <div class="d-flex flex-wrap justify-content-between text-white mx-3">
+      <Card class="my-card" v-for="(card, i) in cards" :key="i" :cardTitle="card.series" :cardImg="card.thumb" />
+    </div>
+  </div>
+  <div class="d-flex justify-content-center w-100">
+    <button class="blue-box more">
+        <span>
+          LOAD MORE
+        </span>
+    </button>
   </div>
 </template>
 
 <style lang="scss" scoped>
 
-.content{
+.series-box{
+  position: absolute;
+  top: 0;
+  transform: translate(0, -50%);
+  padding: 10px 25px;
+}
+
+.more{
+  padding: 10px 80px;
+  border: 0;
+}
+  
+.blue-box{
     font-size: 20px;
+    min-width: 20px;
+    color: white;
+    background-color: #0282F9;
 }
 
 .my-card{

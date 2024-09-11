@@ -39,7 +39,7 @@ export default {
 
     <!-- MAIN -->
 
-    <div class="bg-body d-flex align-items-center">
+    <div class="bg-body d-flex align-items-center position-relative">
       <div class="container-70">
         <AppBody />
       </div>
@@ -114,6 +114,7 @@ export default {
 }
 
 .container-70{
+  flex-wrap: wrap;
   min-height: 100px;
   width: 70%;
   margin: auto;

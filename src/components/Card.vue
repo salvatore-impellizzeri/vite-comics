@@ -47,6 +47,7 @@ export default {
 h5{
     text-transform: uppercase;
     margin: 30px 0px 70px;
+    font-weight: 400;
 }
 
 </style>
