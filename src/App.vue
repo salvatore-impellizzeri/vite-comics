@@ -92,7 +92,7 @@ export default {
 
 .bg-body{
   margin: 0;
-  padding: 50px 0;
+  padding: 70px 0;
   min-height: 150px;
   background-color: #1C1C1C !important;
 }

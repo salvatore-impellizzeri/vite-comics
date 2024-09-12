@@ -34,7 +34,7 @@ export default {
 <style lang="scss" scoped>
 
 .container-img{
-    height: 266px;
+    aspect-ratio: 1 / 1;
 
     img{
         object-fit: cover;
