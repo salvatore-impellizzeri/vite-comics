@@ -126,7 +126,7 @@ export default {
 }
 
 img{
-  margin: 30px 0px;
+  margin: 20px 0px;
 }
 
 </style>
