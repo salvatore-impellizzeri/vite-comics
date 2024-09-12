@@ -69,7 +69,7 @@ export default {
       <ul>
         <li v-for="(link, index) in links" key="index">
             <a class="sans" :href="link.href" @click="toggleLink(index)" :class="{ 'active-text' : active === index }">
-            {{ link.label }}
+              {{ link.label }}
             <div :class="{ 'active': active === index }"></div>
             </a>
         </li>
@@ -101,6 +101,10 @@ export default {
       a{
         text-decoration: none;
         color: rgba(0, 0, 0, 0.7);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        
         &:not(.active):hover{
         color: black;
         }

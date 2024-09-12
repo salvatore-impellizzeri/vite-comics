@@ -32,9 +32,7 @@ export default {
       <div class="container-70">
         <AppHeader />
       </div>
-      <div class="jumbo">
-
-      </div>
+      <div class="jumbo"></div>
     </div>
 
     <!-- MAIN -->
